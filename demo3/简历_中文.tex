@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=1.2cm, footskip=0.5cm}
+
+\usepackage{ctex}
+\usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{blindtext}
+
+\newcommand{\barline}[1]{\colorbox{grey-back!50}{{\makebox[\linewidth][l]{\strut\textbf{#1}}}}}
+\newcommand{\mytitle}[1]{\textbf{{\large #1}}}
+\newcommand{\tuplefourline}[4]{#1 & #2 & #3 & #4 \\}
+\newcommand{\lrline}[4]{\makebox[\linewidth][l]{\makebox[\linewidth/2][l]{\enspace \text{#1}\text{#2}\text{#3}}\makebox[\linewidth/2][r]{\textit{#4}}}}
+\newcommand{\contentbox}[1]{\makebox[1.02\width][c]{\parbox[l][]{.99\textwidth}{#1}}}
+\definecolor{grey-back}{RGB}{166,166,166}
+\definecolor{blue3-text}{RGB}{41,71,121}
+\begin{document}
+	\begin{center}
+		\mytitle{简历}
+	\end{center}
+	\begin{flushleft}
+		\barline{联络}
+		\linebreak
+	\end{flushleft}
+	\begin{tabular}{llll}
+		\tuplefourline{姓名：\!}{张衣闻}{性别：\!}{男}
+		\tuplefourline{年龄：}{26}{手机：}{188-7666-8855}
+		\tuplefourline{邮箱：}{mail@example.com}{Github：}{+……——+}
+	\end{tabular}
+	\begin{flushleft}
+		\barline{知识}
+		\linebreak
+	\end{flushleft}
+	\begin{flushleft}
+	\lrline{杭州工程技术大学-软件工程}{\enspace 本科}{}{2016-2020}
+	\end{flushleft}
+	\begin{tabular}{llll}
+		\tuplefourline{CET4：\!}{548分\enspace}{CET6：\!}{495分}
+	\end{tabular}
+	\begin{tabbing}
+	\enspace \= 计算机等级：\= 国家一级WPS \\
+	\>				\> 国家二级Access数据库 \\
+	\>				\> 国家三级信息安全技术 \\
+	\>				\> 国家四级操作系统原理
+	\end{tabbing}
+\begin{flushleft}
+	\barline{技能}
+	\linebreak
+	
+	\lrline{熟悉：}{Python、Javascript、Emacs Lisp、HTML/Css、Qt、Git、Linux}{}{}
+	\lrline{了解：}{Lua、Torch、Caffe、PySpark、R、Octave、Clojure、Go、C、Elm、Bash、\LaTeX}{}{}
+\end{flushleft}
+\begin{flushleft}
+	\barline{经历}
+	\linebreak
+	
+	\lrline{\textbf{数据分析员 \! \textcolor{blue3-text!80}{汉东省京州市数数科技有限公司}}}{}{}{2018-2019}
+	\contentbox{你好，这里有一些没有意义的文字。 此文本应显示打印文本在此位置的外观。 sin2(α)+cos2(β) =
+		1. 如果你阅读本文，你将得不到任何信息 E = mc2。 真的吗？ 没有信息吗？}
+	
+	\lrline{\textbf{Java开发工程师 \! \textcolor{blue3-text!80}{汉东省京州市葵葵开发有限公司}}}{}{}{2019-2020}
+	\contentbox{你好，这里有一些没有意义的文字。 此文本应显示打印文本在此位置的外观。 sin2(α)+cos2(β) =
+		1. 如果你阅读本文，你将得不到任何信息 E = mc2。 真的吗？ }
+	
+\end{flushleft}
+
+\begin{flushleft}
+	\barline{经验}
+	\linebreak
+	
+	\lrline{\textbf{\textcolor{blue3-text!80}{自动化烧水系统}}}{}{}{QT、ORACLE}
+	\contentbox{你好，这里有一些没有意义的文字。真的吗？ 没有信息吗？ 这段文字有区别吗
+		还有一些诸如“Huardest gefburn”之类的废话？ Kjift - 一点也不！ 像这样的盲文为您提供有关所选字体的信息}
+	
+	\lrline{\textbf{\textcolor{blue3-text!80}{一键关机软件}}}{}{}{\LaTeX}
+	\contentbox{你好，这里有一些没有意义的文字。 此文本应显示打印文本在此位置的外观。 sin2(α)+cos2(β) =
+		1. 如果你阅读本文，你将得不到任何信息 E = mc2。 真的吗？ 没有信息吗？ 这段文字有区别吗
+		还有一些诸如“Huardest gefburn”之类的废话？ Kjift - 一点也不！ 像这样的盲文为您提供有关所选字体的信息}
+	
+\end{flushleft}
+\end{document}

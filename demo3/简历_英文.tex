@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=1.2cm, footskip=0.5cm}
+
+\usepackage{ctex}
+\usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{blindtext}
+
+\newcommand{\barline}[1]{\colorbox{grey-back!50}{{\makebox[\linewidth][l]{\strut\textbf{#1}}}}}
+\newcommand{\mytitle}[1]{\textbf{{\large #1}}}
+\newcommand{\tuplefourline}[4]{#1 & #2 & #3 & #4 \\}
+\newcommand{\lrline}[4]{\makebox[\linewidth][l]{\makebox[\linewidth/2][l]{\enspace \text{#1}\text{#2}\text{#3}}\makebox[\linewidth/2][r]{\textit{#4}}}}
+\newcommand{\contentbox}[1]{\makebox[1.02\width][c]{\parbox[l][]{.99\textwidth}{#1}}}
+\definecolor{grey-back}{RGB}{166,166,166}
+\definecolor{blue3-text}{RGB}{41,71,121}
+\begin{document}
+	\begin{center}
+		\mytitle{Resume}
+	\end{center}
+	\begin{flushleft}
+		\barline{Contact}
+		\linebreak
+	\end{flushleft}
+	\begin{tabular}{llll}
+		\tuplefourline{Name：\!}{Cow Zhang}{Sex：\!}{Female}
+		\tuplefourline{Age：}{26}{Phone：}{+86 188-7666-8855}
+		\tuplefourline{E-Mail：}{mail@example.com}{Github：}{+……——+}
+	\end{tabular}
+	\begin{flushleft}
+		\barline{Education}
+		\linebreak
+	\end{flushleft}
+	\begin{flushleft}
+		\lrline{Hangzhou Engine University-Software Engineering}{\enspace undergraduate}{}{2016-2020}
+	\end{flushleft}
+	\begin{tabular}{llll}
+		\tuplefourline{IELTS：\!}{6.5\enspace}{TOEFL：\!}{81}
+	\end{tabular}
+	\begin{tabbing}
+		\enspace \= License：\= NCRE.1 WPS \\
+		\>				\> NCRE.2 Access \\
+		\>				\> NCRE.3 Infomation Secure \\
+		\>				\> NCRE.4 OS
+	\end{tabbing}
+	\begin{flushleft}
+		\barline{Skills}
+		\linebreak
+		
+		\lrline{Most Comfortable with：}{Python、Javascript、Emacs Lisp、HTML/Css、Qt、Git、Linux}{}{}
+		\lrline{Have work with：}{Lua、Torch、Caffe、PySpark、R、Octave、Clojure、Go、C、Elm、Bash、\LaTeX}{}{}
+	\end{flushleft}
+	\begin{flushleft}
+		\barline{Experience}
+		\linebreak
+		
+		\lrline{\textbf{Machine Learning at \! \textcolor{blue3-text!80}{(HanDong)Number Ltd.}}}{}{}{2018-2019}
+		\contentbox{Hello, here is some text without a meaning. This text should show what a printed text will look like at this place.If you read this text, you will get no information E = mc2. }
+		
+		\lrline{\textbf{Java Software Developer at \! \textcolor{blue3-text!80}{(HanDong)Blooe Ltd.}}}{}{}{2019-2020}
+		\contentbox{Hello, here is some text without a meaning. This text should show what a printed text will look like at this place.Is there no information? Is there a difference between this text
+			and some nonsense like “Huardest gefburn”?}
+		
+	\end{flushleft}
+	
+	\begin{flushleft}
+		\barline{Projects}
+		\linebreak
+		
+		\lrline{\textbf{\textcolor{blue3-text!80}{Automatical Boil System}}}{}{}{QT、ORACLE}
+		\contentbox{Hello, here is some text without a meaning. This text should show what a printed text will look like at this place.If you read this text, you will get no information E = mc2. Really? Is there no information? Is there a difference between this text
+			and some nonsense like “Huardest gefburn”?}
+		
+		\lrline{\textbf{\textcolor{blue3-text!80}{The SHUTdown!}}}{}{}{\LaTeX}
+		\contentbox{Hello, here is some text without a meaning. This text should show what a printed text will look like at this place.If you read this text, you will get no information E = mc2. Really? Is there no information? }
+		
+	\end{flushleft}
+\end{document}
